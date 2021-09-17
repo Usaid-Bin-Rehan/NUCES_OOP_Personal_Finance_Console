@@ -27,7 +27,7 @@ C. Inheritance (Virtual Hybrid / Diamond)
 5. Operator Overloading (++) 
 		Increment Login Count
 6. Downcasting
-		Derived PERSON Class Pointer Dynamic Casted with Base EXPENSE Class Pointer in E2E Encryption Function
+		Derived ACCOUNT Class Pointer Dynamic Casted with Base EXPENSE Class Pointer in E2E Encryption Function
 7. Exception Handling (bad_typeid)
 		TypeID Error in End to End Encryption Function
 8. Generic Programming / Templates (2 Generic Types) 
@@ -752,7 +752,7 @@ class PASSIVE : virtual public REVENUE
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-class PERSON : public RECURRING_EXPENSE, public ONETIME_EXPENSE, public LONG_TERM, public REAL_ESTATE, public INCOME, public PASSIVE
+class ACCOUNT : public RECURRING_EXPENSE, public ONETIME_EXPENSE, public LONG_TERM, public REAL_ESTATE, public INCOME, public PASSIVE
 {
 	private:
 		double wealth;
@@ -765,7 +765,7 @@ class PERSON : public RECURRING_EXPENSE, public ONETIME_EXPENSE, public LONG_TER
 		}
 };
 
-PERSON person; // Global Object of Person Class
+ACCOUNT person; // Global Object of Person Class
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
